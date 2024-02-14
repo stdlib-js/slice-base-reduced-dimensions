@@ -54,6 +54,11 @@ In a multi-axis indexing expression (e.g., '1,:,2,:,0:10:1'), a non-reduced dime
 ## Usage
 
 ```javascript
+import reducedDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-reduced-dimensions@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/slice-base-reduced-dimensions/tags). For example,
+
+```javascript
 import reducedDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-reduced-dimensions@v0.2.0-esm/index.mjs';
 ```
 
@@ -104,7 +109,7 @@ var indices = reducedDimensions( s );
 
 import S from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-ctor@esm/index.mjs';
 import MultiSlice from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-multi@esm/index.mjs';
-import reducedDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-reduced-dimensions@v0.2.0-esm/index.mjs';
+import reducedDimensions from 'https://cdn.jsdelivr.net/gh/stdlib-js/slice-base-reduced-dimensions@esm/index.mjs';
 
 var s = new MultiSlice( null, S(), -1 );
 var out = reducedDimensions( s );
